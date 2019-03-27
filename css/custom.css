@@ -1,0 +1,11 @@
+/* to nav icon style */
+.nav-icon{
+  width:15px!important;
+  height:15px!important;
+  margin-right: 5px;
+}
+
+.orange {
+        background: orange;
+        color: white
+        }

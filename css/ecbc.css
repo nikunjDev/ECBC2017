@@ -1,0 +1,16 @@
+
+.fa {
+color:Gray;
+}
+.navbar-brand {
+margin-right: 0;
+}
+body {
+padding-bottom:100px;
+}
+.navbar-brand{
+    font-size: small !important;
+    }
+.table > tbody > tr > td {
+vertical-align: middle;
+}

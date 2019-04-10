@@ -64,8 +64,8 @@
           <img class="" src="img/logo_2.png" alt="Imperial">
         </div>
 
-        <h1>Welcome to ECBC 2017</h1>
-        <h2>We create <span class="rotating">beautiful graphics, functional websites, working mobile apps</span></h2>
+        <h1>Energy Conservation Building Code</h1>
+        <h2>ECBC Made Easy! Access  <span class="rotating">Anytime, Anywhere</span></h2>
         <div class="actions">
           <a href="#about" class="btn-get-started">Get Strated</a>
           <a href="pdf/BEE_ECBC 2017.pdf" target="_blank" class="btn-services">Download ECBC</a>
@@ -9382,7 +9382,165 @@
   </footer>
   <!-- #footer -->
 
+  <!--==========================
+  Modal dialog filter box
+============================-->
+  <div class="modal fade" id="modalFilterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"  aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Building Parameters</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <form role="form" class="filterForm" action="" method="post">
+          <!-- Location -->
+          <div class="md-form mb-5" style="margin-bottom:5px;">
+            <label >Location </label>
+            <select id="defaultForm-location" class="form-control">
+                <option>All</option>
+                <option>jsgds</option>
+                <option>jsgds</option>
+                <option>jsgds</option>
+            </select>
+            <div class="cover-container" id="location">
+
+              <div class="cover-item"  >
+                <img class="filter_icon" src="img/filter/ic_climate_cold.png" alt="Card image cap">
+                  <p class="filter_card_text"  >Cold</p>
+              </div>
+              <div class="cover-item">
+                <img class="filter_icon"  src="img/filter/ic_climate_composite.png" alt="Card image cap">
+                  <p class="filter_card_text" >Composite</p>
+              </div>
+              <div class="cover-item" >
+                <img class="filter_icon"  src="img/filter/ic_climate_hot_dry.png" alt="Card image cap">
+                  <p class=" filter_card_text"   >Hot & Dry</p>
+              </div>
+              <div class="cover-item" >
+                <img class="filter_icon"  src="img/filter/ic_climate_hot_humid.png" alt="Card image cap">
+                  <p class=" filter_card_text" >Warm & Humid</p>
+              </div>
+              <div class="cover-item"  >
+                <img class="filter_icon"  src="img/filter/ic_climate_temperate.png" alt="Card image cap">
+                  <p class=" filter_card_text"  >Temperate</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Type -->
+          <div class="md-form mb-4" style="margin-bottom:5px;">
+            <label >Type </label>
+            <select id="defaultForm-type" class="form-control">
+                <option>All</option>
+                <option>Star Hotel</option>
+                <option>No Star Hotel</option>
+                <option>Resort</option>
+            </select>
+            <div class="cover-container" id="type">
+              <div class="cover-item"  >
+                <img  class="filter_icon" src="img/filter/ic_typology_assembly.png" alt="Card image cap">
+                  <p class=" filter_card_text"  >Assembly</p>
+              </div>
+              <div class="cover-item">
+                <img  class="filter_icon" src="img/filter/ic_typology_hotel.png" alt="Card image cap">
+                  <p class=" filter_card_text" >Hotel</p>
+              </div>
+              <div class="cover-item" >
+                <img  class="filter_icon" src="img/filter/ic_typology_hospital.png" alt="Card image cap">
+                  <p class=" filter_card_text"   >Hospital</p>
+              </div>
+              <div class="cover-item" >
+                <img  class="filter_icon" src="img/filter/ic_typology_office.png" alt="Card image cap">
+                  <p class=" filter_card_text" >Office</p>
+              </div>
+              <div class="cover-item"  >
+                <img  class="filter_icon" src="img/filter/ic_typology_school.png" alt="Card image cap">
+                  <p class=" filter_card_text"  >School</p>
+              </div>
+              <div class="cover-item"  >
+                <img class="filter_icon"  src="img/filter/ic_typology_shopping.png" alt="Card image cap">
+                  <p class=" filter_card_text"  >Schooping</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Usage -->
+          <div class="md-form mb-4" style="margin-bottom:5px;">
+            <label >Usage </label>
+            <select id="defaultForm-usage" class="form-control">
+                <option>Daytime</option>
+                <option>24-Hr</option>
+            </select>
+            <div class="cover-container" id="type">
+              <div class="cover-item"  >
+                <img  class="filter_icon" src="img/filter/ic_usage_day.png" alt="Card image cap">
+                  <p class=" filter_card_text"  >Daytime</p>
+              </div>
+              <div class="cover-item">
+                <img  class="filter_icon" src="img/filter/ic_usage_day_night.png" alt="Card image cap">
+                  <p class=" filter_card_text" >24-Hr</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Compliance level -->
+          <div class="md-form mb-4" style="margin-bottom:5px;">
+            <label style="margin-right:5px;">Compliance Level </label>
+            <label class="checkbox-inline"><input type="checkbox" value="ECBC">ECBC</label>
+            <label class="checkbox-inline"><input type="checkbox" value="ECBC+">ECBC +</label>
+            <label class="checkbox-inline"><input type="checkbox" value="SuperECBC">Super ECBC</label>
+
+          </div>
+
+          <!-- Ventelation -->
+          <div class="md-form mb-4" style="margin-bottom:5px;">
+            <label >Ventilation Strategy </label>
+            <select id="defaultForm-Ventelation" class="form-control">
+                <option>Air-conditioned</option>
+                <option>Mechanical Ventilation</option>
+                <option>Natural Ventilation</option>
+            </select>
+            <div class="cover-container" id="ventilation">
+              <div class="cover-item"  >
+                <img  class="filter_icon" src="img/filter/ic_ventilation_air_conditioned.png" alt="Card image cap">
+                  <p class=" filter_card_text"  >Air-<br/>conditioned</p>
+              </div>
+              <div class="cover-item">
+                <img class="filter_icon"  src="img/filter/ic_ventilation_forced.png" alt="Card image cap">
+                  <p class=" filter_card_text" >Mechanical <br/>Ventilation</p>
+              </div>
+              <div class="cover-item">
+                <img class="filter_icon"  src="img/filter/ic_ventilation_natural.png" alt="Card image cap">
+                  <p class=" filter_card_text" >Natural <br/>Ventilation</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="submit" class="btn btn-danger btn-default" data-dismiss="modal"> Cancel</button>
+          <button type="submit" class="btn btn-success btn-default">Apply</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+  <!-- Modal dialog filter box -->
+
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="" class="filter_btn" data-toggle="modal" data-target="#modalFilterForm"><i class="material-icons">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="#000000" d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
+            </svg>
+          </i></a>
+
 
   <!-- Required JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -9400,6 +9558,31 @@
   <script src="js/ecbc.js"></script>
   <script src="contactform/contactform.js"></script>
 
+  <script>
+  var Android = {
+      ventilation: function () {
+          return "AC";
+      },
+      climate: function() {
+          return "Hot & Dry";
+      },
+      compliance: function() {
+          return "SuperECBC";
+      },
+      parentCategory: function() {
+          return "Business";
+      },
+      category: function() {
+          return "Small Office";
+      },
+      print: function() {
+          alert('printing');
+      },
+      location: function() {
+          return "Delhi";
+      }
+  };
+  </script>
 
 </body>
 
